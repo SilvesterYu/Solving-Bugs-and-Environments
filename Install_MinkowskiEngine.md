@@ -11,7 +11,10 @@ cd scratch/<your_net_id>
 ### 1. Build anaconda environment
 
 Here I use `python=3.8` as an example (it is suitable for `MinkLoc3D-SI` implementation with MinkowkiEngine) to build a new anaconda environment in `scratch/<your_net_id>` directory
-
+```
+module purge
+module load anaconda3/2020.07
+```
 ```
 conda create -p ./minklocconda python=3.8
 ```
@@ -109,7 +112,7 @@ in the file, add the following. Replace `<your_net_id>` with your own net id.
 #SBATCH --job-name=torch
 
 module purge
-modue load anaconda3/2020.07
+module load anaconda3/2020.07
 eval "$(conda shell.bash hook)"
 source activate /scratch/<your_net_id>/minklocconda
 
