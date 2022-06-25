@@ -15,7 +15,9 @@ Here I use `python=3.8` as an example (it is suitable for `MinkLoc3D-SI` impleme
 ```
 conda create -p ./minklocconda python=3.8
 ```
-Here, make sure you have the following requirements for MinkowkiEngine:
+Here, make sure you meet all the following requirements for MinkowkiEngine:
+
+---
 
 Ubuntu >= 14.04
 
@@ -30,6 +32,8 @@ python >= 3.6
 ninja (for installation)
 
 GCC >= 7.4.0
+
+---
 
 ### 2. Add path
 
