@@ -103,6 +103,11 @@ python torchtest.py
 python train.py --config ../config/config_usyd.txt --model_config ../models/minkloc_config.txt
 ```
 
+### 6. Submit job script
 
+```
+sbatch runmink.SBATCH
+```
+It is a good practice to submit a job script in order to install libraries that require GPU because in interactive mode (temporarily requesting a GPU using, say `srun --gres=gpu:v100 --pty /bin/bash`), only 2G memory will be provided, and it might not be enough for the installation.
 
 
