@@ -61,8 +61,6 @@ source ~/.bashrc
 
 ### 3. Add requirements.txt
 
-I automatically generated requirements for MinkLoc3D-SI using `pipreqs /path/to/project` and manually filtered it.
-
 Create a `requirements.txt` file
 ```
 cd MinkLod3D-SI
@@ -82,6 +80,8 @@ scikit_learn==1.1.1
 scipy==1.7.3
 tqdm==4.64.0
 ```
+(The above come from `pipreqs /path/to/project` and manual filtering)
+
 
 ### 4. Add init.py to `MinkLoc3D-SI` folder
 
