@@ -47,7 +47,7 @@ GCC >= 7.4.0
 ```
 nano ~/.bashrc
 ```
-add the following to ~/.bashrc, replace `<your_net_id>` with your own net id. If you have your project somewhere else than `scratch`, replace the second line with your project path. The line `export CXX=g++` resolves a previous g++ problem.
+add the following to ~/.bashrc, replace `<your_net_id>` with your own net id. The line `export CXX=g++` resolves a previous g++ problem.
 ```
 export PATH=~/anaconda3/bin:$PATH
 
