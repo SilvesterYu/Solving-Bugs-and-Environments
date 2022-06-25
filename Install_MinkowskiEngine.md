@@ -40,8 +40,14 @@ source ~/.bashrc
 
 I automatically generated requirements for MinkLoc3D-SI using `pipreqs /path/to/project` and manually filtered it.
 
-Create a `requirements.txt` file with the following:
-
+Create a `requirements.txt` file
+```
+cd MinkLod3D-SI
+```
+```
+touch requirements.txt
+```
+copy these into the file:
 ```
 bitarray==2.4.1
 numba==0.55.1
@@ -56,9 +62,6 @@ tqdm==4.64.0
 
 ### 4. Add init.py to `MinkLoc3D-SI` folder
 
-```
-cd MinkLod3D-SI
-```
 ```
 touch init.py
 ```
