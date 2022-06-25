@@ -15,7 +15,11 @@ Here I use `python=3.8` as an example (it is suitable for `MinkLoc3D-SI` impleme
 ```
 conda create -p ./minklocconda python=3.8
 ```
-Here, make sure you meet all the following requirements for MinkowkiEngine:
+Try activating the environment
+```
+conda activate ./minklocconda
+```
+and make sure you meet all the following requirements for MinkowkiEngine:
 
 ---
 
