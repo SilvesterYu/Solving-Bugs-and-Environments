@@ -19,7 +19,7 @@ Here, make sure you meet all the following requirements for MinkowkiEngine:
 
 ---
 
-Ubuntu >= 14.04
+Ubuntu >= 14.04 # not for HPC
 
 CUDA >= 10.1.243 and the same CUDA version used for pytorch (e.g. if you use conda cudatoolkit=11.1, use CUDA=11.1 for 
 
