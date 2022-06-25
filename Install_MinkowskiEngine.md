@@ -90,6 +90,7 @@ tqdm==4.64.0
 ```
 touch init.py
 ```
+add sys path to train.py
 ```
 cd training
 nano train.py
