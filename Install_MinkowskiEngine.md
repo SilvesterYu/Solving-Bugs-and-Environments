@@ -15,6 +15,21 @@ Here I use `python=3.8` as an example (it is suitable for `MinkLoc3D-SI` impleme
 ```
 conda create -p ./minklocconda python=3.8
 ```
+Here, make sure you have the following requirements for MinkowkiEngine:
+
+Ubuntu >= 14.04
+
+CUDA >= 10.1.243 and the same CUDA version used for pytorch (e.g. if you use conda cudatoolkit=11.1, use CUDA=11.1 for 
+
+MinkowskiEngine compilation)
+
+pytorch >= 1.7 (pytorch 1.8.1 + CUDA 11.X is unstable. To specify CUDA version, please use conda for installation. conda install -y -c conda-forge -c pytorch pytorch=1.8.1 cudatoolkit=10.2)
+
+python >= 3.6
+
+ninja (for installation)
+
+GCC >= 7.4.0
 
 ### 2. Add path
 
