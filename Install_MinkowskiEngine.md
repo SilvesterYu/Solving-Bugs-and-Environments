@@ -85,15 +85,24 @@ tqdm==4.64.0
 (The above come from `pipreqs /path/to/project` and manual filtering)
 
 
-## 4. Add init.py to `MinkLoc3D-SI` folder
+## 4. Add init.py to `MinkLoc3D-SI` folder and modify train.py
 
 ```
 touch init.py
 ```
 ```
-cd ..
+cd training
+nano train.py
 ```
-
+Add at the beginning
+```
+import sys
+sys.path.append("../..MinkLoc3D-SI")
+```
+close and go back
+```
+cd ../..
+```
 ## 5. Create a job script to run the code
 
 ```
@@ -105,7 +114,7 @@ in the file, add the following. Replace `<your_net_id>` with your own net id.
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=1:00:00
+#SBATCH --time=6:00:00
 #SBATCH --mem=40GB
 #SBATCH --gres=gpu:1
 #SBATCH --job-name=torch
