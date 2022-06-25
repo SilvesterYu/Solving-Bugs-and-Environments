@@ -128,6 +128,9 @@ source ~/.bashrc
 
 # run the code
 cd MinkLoc3D-SI
+cd generating_queries
+python generate_training_tuples_usyd.py
+cd ..
 cd training
 python train.py --config ../config/config_usyd.txt --model_config ../models/minkloc_config.txt
 ```
