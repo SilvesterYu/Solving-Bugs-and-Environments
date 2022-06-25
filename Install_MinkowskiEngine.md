@@ -1,4 +1,4 @@
-## Installing MinkowskiEngine on NYU Greene HPC
+# Installing MinkowskiEngine on NYU Greene HPC
 
 Full documentation for installing MinkowskiEngine in an anaconda environment for running `MinkLoc3D-SI`.
 
@@ -8,7 +8,7 @@ Best practice, first go to
 cd scratch/<your_net_id>
 ```
 
-### 1. Build anaconda environment
+## 1. Build anaconda environment
 
 Here I use `python=3.8` as an example (it is suitable for `MinkLoc3D-SI` implementation with MinkowkiEngine) to build a new anaconda environment in `scratch/<your_net_id>` directory
 ```
@@ -42,7 +42,7 @@ GCC >= 7.4.0
 
 ---
 
-### 2. Add path
+## 2. Add path
 
 ```
 nano ~/.bashrc
@@ -62,7 +62,7 @@ close the file and source it
 source ~/.bashrc
 ```
 
-### 3. Add requirements.txt
+## 3. Add requirements.txt
 
 Create a `requirements.txt` file
 ```
@@ -86,7 +86,7 @@ tqdm==4.64.0
 (The above come from `pipreqs /path/to/project` and manual filtering)
 
 
-### 4. Add init.py to `MinkLoc3D-SI` folder
+## 4. Add init.py to `MinkLoc3D-SI` folder
 
 ```
 touch init.py
@@ -95,7 +95,7 @@ touch init.py
 cd ..
 ```
 
-### 5. Create a job script to run the code
+## 5. Create a job script to run the code
 
 ```
 touch runmink.SBATCH
@@ -134,7 +134,7 @@ python torchtest.py
 python train.py --config ../config/config_usyd.txt --model_config ../models/minkloc_config.txt
 ```
 
-### 6. Submit job script
+## 6. Submit job script
 
 ```
 sbatch runmink.SBATCH
