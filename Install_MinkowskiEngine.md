@@ -72,7 +72,7 @@ touch requirements.txt
 ```
 copy these into the file:
 ```
-bitarray==2.4.1
+bitarray==1.6.0
 numba==0.55.1
 numpy==1.21.5
 pandas==1.4.2
