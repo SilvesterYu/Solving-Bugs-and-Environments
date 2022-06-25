@@ -21,7 +21,7 @@ conda create -p ./minklocconda python=3.8
 ```
 nano ~/.bashrc
 ```
-add the following to ~/.bashrc, replace `<your_net_id>` with your own net id. If you have your project somewhere else than `scratch`, replace the second line with your project path
+add the following to ~/.bashrc, replace `<your_net_id>` with your own net id. If you have your project somewhere else than `scratch`, replace the second line with your project path. The line `export CXX=g++` resulves a previous g++ problem.
 ```
 export PATH=~/anaconda3/bin:$PATH
 
@@ -108,6 +108,6 @@ python train.py --config ../config/config_usyd.txt --model_config ../models/mink
 ```
 sbatch runmink.SBATCH
 ```
-It is a good practice to submit a job script in order to install libraries that require GPU because in interactive mode (temporarily requesting a GPU using, say `srun --gres=gpu:v100 --pty /bin/bash`), only 2G memory will be provided, and it might not be enough for the installation.
+It is a good practice to submit a job script in order to install libraries that require GPU because in interactive mode (temporarily requesting a GPU using, say `srun --gres=gpu:v100 --pty /bin/bash`), only 2G memory will be provided, and installation will fail due to insufficient memory.
 
 
