@@ -129,7 +129,6 @@ source ~/.bashrc
 # run the code
 cd MinkLoc3D-SI
 cd training
-python torchtest.py
 python train.py --config ../config/config_usyd.txt --model_config ../models/minkloc_config.txt
 ```
 
