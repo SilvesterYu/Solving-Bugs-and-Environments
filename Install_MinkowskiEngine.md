@@ -100,6 +100,8 @@ pip install tensorboard
 pip install -r requirements.txt
 
 source ~/.bashrc
+
+# run the code
 cd MinkLoc3D-SI
 cd training
 python torchtest.py
