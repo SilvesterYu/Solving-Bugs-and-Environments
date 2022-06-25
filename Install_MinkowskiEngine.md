@@ -31,7 +31,7 @@ export CUDA_HOME=/usr/local/cuda-11.4
 
 export CXX=g++
 ```
-source it
+close the file and source it
 ```
 source ~/.bashrc
 ```
