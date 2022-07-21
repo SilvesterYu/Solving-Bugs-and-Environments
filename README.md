@@ -1,2 +1,3 @@
-# NYUGreeneHPC_Notes
-Notes for running jobs on NYU Greene HPC
+# Solving Bugs and Environments
+Notes for solving bugs annd building environments
+
