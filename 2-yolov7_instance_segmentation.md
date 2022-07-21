@@ -68,7 +68,7 @@ Convert it to coco dataset format. Follow this tutorial: https://www.youtube.com
 
 ### 5. Configs and Registering Dataset
 
-create a folder with a custom name. I named it `train_test_coco`
+create a folder in configs/ with a custom name. I named it `train_test_coco`
 
 go to configs/coco-instance and copy yolomask.yaml into train_test_coco/
 
