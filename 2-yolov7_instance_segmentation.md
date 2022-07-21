@@ -22,6 +22,7 @@ pip install mmpycocotools
 pip install omegaconf
 pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"
 pip install opencv-python
+pip install scipy
 ```
 
 ### 1. Clone yolo v7
