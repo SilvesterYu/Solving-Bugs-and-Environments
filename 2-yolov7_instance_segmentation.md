@@ -113,7 +113,7 @@ register_custom_datasets()
 run
 
 ```
-python my_custom_train_inseg.py --config-file configs/train_test_coco/yolomask.yaml --num-gpus 0
+python my_custom_train_inseg.py --config-file configs/train_test_coco/yolomask.yaml --num-gpus 1
 ```
 
 
