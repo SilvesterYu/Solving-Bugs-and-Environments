@@ -86,7 +86,7 @@ change the following in the new yolomask.yaml to register the dataset
 
 make a copy of `train_inseg.py` and rename it as `my_custom_train_inseg.py`
 
-in outputs/, create a folder named `my_inseg_output`
+create a folder in the same directory as `my_custom_train_inseg.py`, name it `outputs`, create a folder named `my_inseg_output`. The outputs will be in `outputs/my_inseg_output`.
 
 open file `my_custom_train_inseg.py`
 
