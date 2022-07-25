@@ -26,4 +26,39 @@ gcc --version
 pip install -U git+https://github.com/NVIDIA/MinkowskiEngine -v --no-deps --install-option="--blas_include_dirs=${CONDA_PREFIX}/include" 
 --install-option="--blas=openblas"
 ```
+Now Minkowske Engine is installed. Below are other stuff for the example repo.
+
+## 2 Set up other stuff
+
+```
+pip install pytorch_metric_learning
+pip install pandas
+pip install wandb
+```
+
+## 3. Export Python path
+
+cd into the repo folder, get absolute path using `pwd`, copy. Then open
+
+```
+nano ~/.bashrc
+```
+or for others, 
+```
+nano ~/.zshrc
+```
+export path like this.
+```
+export PYTHONPATH=$PYTHONPATH:/home/.../MinkLoc3Dv2
+```
+And source
+```
+source ~/.bashrc
+```
+or 
+```
+source ~/.zshrc
+```
+
+
 
