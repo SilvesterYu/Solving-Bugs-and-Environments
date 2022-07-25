@@ -38,7 +38,7 @@ pip install wandb
 
 ## 3. Export Python path
 
-cd into the repo folder, get absolute path using `pwd`, copy. Then open
+cd into the repo folder, get absolute path using `pwd` command, copy path. Then open
 
 ```
 nano ~/.bashrc
