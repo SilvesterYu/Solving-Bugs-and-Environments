@@ -34,6 +34,7 @@ Now Minkowske Engine is installed. Below are other stuff for the example repo.
 pip install pytorch_metric_learning
 pip install pandas
 pip install wandb
+pip install tensorboard
 ```
 
 ## 3. Export Python path
