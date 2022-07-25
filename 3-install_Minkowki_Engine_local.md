@@ -66,7 +66,7 @@ source ~/.zshrc
 
 extract benchmark dataset outside of the example repo folder.
 
-run generate queries in `pointnetvlad`, move the pickle files into benchmark dataset folder
+clone `pointnetvlad`, run generate queries in `pointnetvlad`, move the pickle files into benchmark dataset folder
 
 ```
 python generate_training_tuples_baseline.py --dataset_root /home/silvey/Documents/GitHub/benchmark_datasets
