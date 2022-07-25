@@ -1,4 +1,4 @@
-# Install Minkowki Engine on Local Ubuntu Machine
+# Install Minkowki Engine 0.5.4 on Local Ubuntu Machine
 
 ## 0 create Conda environment
 
@@ -18,7 +18,7 @@ Check gcc
 gcc --version
 ```
 
-## 1 Install Minkowski Engine using
+## 1 Install Minkowski Engine 0.5.4 using
 
 ```
 pip install -U git+https://github.com/NVIDIA/MinkowskiEngine -v --no-deps --install-option="--blas_include_dirs=${CONDA_PREFIX}/include" 
