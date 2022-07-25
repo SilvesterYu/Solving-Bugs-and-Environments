@@ -35,6 +35,8 @@ pip install pytorch_metric_learning
 pip install pandas
 pip install wandb
 pip install tensorboard
+pip install numba
+pip install setuptools==59.5.0
 ```
 
 ## 3. Export Python path
@@ -60,6 +62,33 @@ or
 ```
 source ~/.zshrc
 ```
+## 4 Download Dataset and generate queries
+
+extract benchmark dataset outside of the example repo folder.
+
+run generate queries in `pointnetvlad`, move the pickle files into benchmark dataset folder
+
+```
+python generate_training_tuples_baseline.py --dataset_root /home/silvey/Documents/GitHub/benchmark_datasets
+```
+
+## 5 Run
+### Train
+```
+python train.py --config ../config/config_baseline.txt --model_config ../models/minkloc3dv2.txt
+```
+
+If the below error occurs, 
+```
+  File "/root/anaconda3/envs/minklocv2/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 4, in <module>
+    LooseVersion = distutils.version.LooseVersion
+AttributeError: module 'distutils' has no attribute 'version'
+```
+run
+```
+pip install setuptools==59.5.0
+```
+
 
 
 
