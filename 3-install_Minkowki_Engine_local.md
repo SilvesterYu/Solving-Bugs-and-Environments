@@ -1,5 +1,7 @@
 # Install Minkowki Engine 0.5.4 on Local Ubuntu Machine
 
+Taking the local implementation of this model as an example: https://github.com/jac99/MinkLoc3Dv2
+
 ## 0 create Conda environment
 
 ```
