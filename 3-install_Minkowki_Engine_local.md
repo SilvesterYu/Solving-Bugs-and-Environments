@@ -88,7 +88,6 @@ run
 ```
 pip install setuptools==59.5.0
 ```
-
-
+Move the `process_queries()` function in dataset_utils.py into `TrainingDataset` object in order to get bitarray necessary for running training
 
 
