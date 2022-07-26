@@ -1,4 +1,4 @@
-# installing pyexr on ubuntu
+# Installing pyexr on ubuntu
 
 When error `fatal error: ImfIO.h: No such file or directory` happens, run:
 
