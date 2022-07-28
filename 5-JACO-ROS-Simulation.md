@@ -1,8 +1,19 @@
 # JACO-ROS-Simulation
 ROS simulation preparation for JACO robot in Ubuntu 18.04
 
-**IMPORTANT : IF YOU USE ZSH INSTEAD OF BASH, REPLACE ALL bashrc with zshrc**
 
+# System Requirements and Software Packages Used
+
+System : Ubuntu 18.04
+
+ROS : [ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+
+Robot : [Kinova JACO Assistive Robot Arm](https://assistive.kinovarobotics.com/product/jaco-robotic-arm)
+
+ROS Package : [Kinovarobotics](https://github.com/Kinovarobotics/kinova-ros)
+
+
+**IMPORTANT : IF YOU USE ZSH INSTEAD OF BASH, REPLACE ALL bashrc with zshrc**
 
 **First ,get a clean install of Ubuntu 18.04**
 
@@ -120,4 +131,32 @@ Build the package
 ```bash
 catkin_make
 ```
+
+```
+sudo apt-get install ros-melodic-gazebo-ros-control
+sudo apt-get install ros-melodic-ros-controllers
+sudo apt-get install ros-melodic-trac-ik-kinematics-plugin
+```
+
+# Simulating and moving the Robot
+
+Start the Gazebo Simulation 
+
+```bash
+roslaunch kinova_gazebo robot_launch.launch kinova_robotType:=j2n6s300
+```
+
+Control using Moveit and RViz
+
+```bash
+roslaunch j2n6s300_moveit_config j2n6s300_gazebo_demo.launch
+```
+
+You should see these after a while, ready to control
+
+![Robot](./test.png)
+
+
+
+https://user-images.githubusercontent.com/15011271/181346069-0f8c0cc6-d2a8-4d0f-9d09-94a9bc7fbe9f.mp4
 
