@@ -1,14 +1,26 @@
 To solve `bower : The term 'bower' is not recognized as the name of a cmdlet, function, script file, or operable program.`
 
-Use ```npm install -g bower```
+Use 
+
+```
+npm install -g bower
+```
 
 <img width="608" alt="33342fce062d93775da7375d2c102eb" src="https://user-images.githubusercontent.com/74582280/227071717-a728c9d3-c9e3-48d8-bd99-9a33bad4ca23.png">
 
 To solve `bower: .../.../.../ cannot be loaded.`
 
-Use ```Get-ExecutionPolicy```
+Use
 
-Then ```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser```
+```
+Get-ExecutionPolicy
+```
+
+Then 
+
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
 refer to: https://techblog.dev/posts/2022/10/fix-bower-ps1-cannot-be-loaded-running-scripts-disabled-error-windows-powershell/
 
